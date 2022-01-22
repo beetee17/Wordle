@@ -93,7 +93,7 @@ class WordleViewModel: ObservableObject {
         }
         
         self.currentAttempt = Array(repeating: nil, count: Game.numLetters)
-        self.selection = 0
+        self.updateSelection(to: 0, action: .None)
     }
     
     func isWord(_ word: [Letter]) -> Bool {
